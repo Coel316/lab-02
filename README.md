@@ -4,19 +4,19 @@ Feature #1: Display images:
 
 Estimate of time needed to complete: 45 minutes
 
-Start time: _____
+Start time: 9:15
 
-Finish time: _____
+Finish time: 10:39
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1hr 24minutes
 
 
 -------
-Feature #2: Filter imagesL
+Feature #2: Filter images
 
 Estimate of time needed to complete: 1 hour
 
-Start time: _____
+Start time: 10:41
 
 Finish time: _____
 
