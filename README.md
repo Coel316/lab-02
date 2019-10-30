@@ -1,5 +1,7 @@
 # lab-02
 
+Using a JSON file to display pictures
+
 Feature #1: Display images:
 
 Estimate of time needed to complete: 45 minutes
@@ -18,9 +20,9 @@ Estimate of time needed to complete: 1 hour
 
 Start time: 10:41
 
-Finish time: _____
+Finish time: 10:59
 
-Actual time needed to complete: _____
+Actual time needed to complete: 18 minutes
 
 
 -------
@@ -28,9 +30,9 @@ Feature #3: Style the application:
 
 Estimate of time needed to complete: 1 hour
 
-Start time: _____
+Start time: 11:00
 
-Finish time: _____
+Finish time: 11:42
 
-Actual time needed to complete: _____
+Actual time needed to complete: 42 minutes
 
