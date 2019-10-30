@@ -5,9 +5,19 @@ $(document).ready(function () {
   $.get('data/page-1.json')
     .then(data => {
       data.animals.forEach(image => {
-        $('photo-template').append(`<img>${image.image_url}</img>`);
+        $('#photo-template').append(`<img src=${image.image_url} id=${image.keyword}></img>`);
 
       });
 
     });
 });
+
+
+$('select').change(function() {
+  $('img').hide();
+  $('#' + $(this).val()).show();
+});
+
+
+
+
