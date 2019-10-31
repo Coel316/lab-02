@@ -36,3 +36,51 @@ Finish time: 11:42
 
 Actual time needed to complete: 42 minutes
 
+-----------
+# lab 3
+
+Feature 1: Pagination
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete:
+
+
+Feature 2: Templating
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete:
+
+
+Feature 3: Styling with Flexbox
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete:
+
+
+Feature 4: Sort the images
+
+Estimate of time needed to complete: 1 hour
+
+Start time: 
+
+Finish time: 
+
+Actual time needed to complete:
+
+
+
