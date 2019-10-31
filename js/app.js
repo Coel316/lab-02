@@ -1,23 +1,37 @@
 'use strict';
+var allCreatures = [];
 
-// Needed to retrieve raw images from json file
+function Creature (url, title, description, keyword, horns){
+  this.url = url;
+  this.title = title;
+  this.description = description;
+  this.keyword = keyword;
+  this.horns = horns;
+  allCreatures.push(this);
+}
+
+
 $(document).ready(function () {
   $.get('data/page-1.json')
     .then(data => {
-      data.animals.forEach(image => {
-        $('#photo-template').append(`<img src=${image.image_url} id=${image.keyword}></img>`);
-
-      });
-
+      for (var i = 0; i < data.animals.length; i++) {
+        new Creature(data.animals[i].image_url, data.animals[i].title, data.animals[i].description, data.animals[i].keyword, data.animals[i].horns);
+      }
+      renderPictures();
     });
 });
+
+function renderPictures(){
+  allCreatures.forEach(image => {
+    $('#photo-template').append(`<img src=${image.url} class= ${image.keyword}></img>`);
+
+  });
+}
 
 
 $('select').change(function() {
   $('img').hide();
-  $('#' + $(this).val()).show();
+  let val = $(this).val();
+  if(val === 'default') {$('img').show();}
+  else { $('.' + val).show(); }
 });
-
-
-
-
