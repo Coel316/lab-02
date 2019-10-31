@@ -24,11 +24,14 @@ $(document).ready(function () {
       }
       renderPictures();
     });
-});
 
+ 
+
+});
+// <h2> ${image.title} </h2>
 function renderPictures() {
   allCreatures.forEach(image => {
-    $('#photo-template').append(`<img src=${image.url} class= ${image.keyword}></img>`);
+    $('#photo-template').append(` <img src=${image.url} class= ${image.keyword}></img> `);
     // var context = { url: image.url, keyword: image.keyword}
     // var html = template(context);
 
@@ -41,3 +44,28 @@ $('select').change(function () {
   if (val === 'default') { $('img').show(); }
   else { $('.' + val).show(); }
 });
+
+var userForm = document.getElementById('sortHorns');
+userForm.addEventListener('submit', sortByHorns);
+var clear = document.getElementById('photo-template');
+function sortByHorns(event) {
+  event.preventDefault();
+  allCreatures.sort((a,b) => a.horns - b.horns);
+  clear.innerHTML = '';
+  renderPictures();
+}
+
+var userFormTwo = document.getElementById('sortTitle');
+userFormTwo.addEventListener('submit', sortByTitle);
+var clearTwo = document.getElementById('photo-template');
+
+function sortByTitle(event) {
+  event.preventDefault();
+  allCreatures.sort( (a,b) => {
+    if (a.title < b.title) {return -1}
+  });
+  console.log('SORT TWO', allCreatures);
+  clearTwo.innerHTML = '';
+  renderPictures();
+}
+

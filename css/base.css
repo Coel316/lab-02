@@ -2,11 +2,21 @@
       max-width: 1200px;
   } */
 
+  section {
+    display:flex;
+    flex-flow: column wrap;
+    align-content: space-evenly;
+    flex-direction: row;
+  }
 
 img {
-    float: left;
+  
     width: 30vw;
     height:30vw;
     margin-top: 25px;
 }
+
+/* h2 {
+  float: left;
+} */
 
